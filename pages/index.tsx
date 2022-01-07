@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
 import styles from '../styles/Home.module.css'
-import { FiLinkedin, FiTwitter, FiGithub } from 'react-icons/fi';
 
 const Home: NextPage = () => {
   return (
@@ -17,13 +17,21 @@ const Home: NextPage = () => {
         <div className={styles.container}>
           <div className={styles.hello}>
             <div className={styles.avatar}>
-              <Image src="/profile.jpg" alt="Ryan Lima" width={150} height={150} />
+              <Link href="https://github.com/ryansldev" passHref={true}>
+                <a target="_blank">
+                  <Image src="/profile.jpg" alt="Ryan Lima" width={200} height={200} />
+                </a>
+              </Link>
             </div>
             <h1>Ryan Lima</h1>
-            <h2>Sou UI Designer e desenvolvedor FullStack</h2>
-            <button type="button">
-              Vamos trabalhar juntos
-            </button>
+            <h2 style={{ marginBottom: '0.3em' }}>Sou UI Designer e desenvolvedor FullStack</h2>
+            <Link passHref={true} href="#">
+              <div className={styles.letsWorkTogether}>
+                <div className={styles.scrollToIcon}>
+                </div>
+                Veja mais abaixo
+              </div>
+            </Link>
           </div>
         </div>
       </main>
