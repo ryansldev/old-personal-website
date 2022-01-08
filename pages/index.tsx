@@ -36,8 +36,8 @@ const Home: NextPage = () => {
             </Link>
           </div>
 
-          <h1 className={styles.projectsSectionTitle}>MY PROJECTS</h1>
-          <div className={styles.projects} id="projects">
+          <h1 className={styles.projectsSectionTitle} id="projects">MY PROJECTS</h1>
+          <div className={styles.projects}>
             <Link href="https://github.com/ryansldev/world-wide-dev" passHref={true}>
               <a target="_blank" className={styles.project} id={styles.wwdev}>
                 <div className={styles.containerProject}>
