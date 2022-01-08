@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
-import { Footer } from './components/Footer';
+import Footer from './components/Footer';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
 const Home: NextPage = () => {

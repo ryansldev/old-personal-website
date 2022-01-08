@@ -2,7 +2,7 @@ import styles from './styles.module.css';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
-export function Footer() {
+function Footer() {
   return (
     <footer className={styles.footer} id="footer">
       <h1>Ryan Lima</h1>
@@ -29,3 +29,5 @@ export function Footer() {
     </footer>
   )
 }
+
+export default Footer;
