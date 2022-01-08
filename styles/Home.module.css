@@ -213,3 +213,35 @@
 .contact h1:hover {
   color: var(--indigo-500);
 }
+
+@media (max-width: 720px) {
+  .contact h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact p {
+    font-size: 0.875rem;
+  }
+
+  .contact h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 327px) {
+  .contact p {
+    font-size: 0.75rem;
+  }
+
+  .contact h1 {
+    font-size: 1rem;
+  }
+}
