@@ -190,3 +190,21 @@
   margin: 0 auto;
   margin-top: 2em;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 6em 0 8em 0;
+  color: var(--slate-900);
+}
+
+.contact h1 {
+  font-size: 3rem;
+  transition: .3s ease-in-out;
+}
+
+.contact h1:hover {
+  color: var(--indigo-500);
+}

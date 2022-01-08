@@ -59,6 +59,17 @@ const Home: NextPage = () => {
               </a>
             </Link>
           </div>
+          <div className={styles.contact}>
+            <p>
+              Estou aberto para novas experiências, precisa
+              de um desenvolvedor ou designer?
+            </p>
+            <Link href="https://www.linkedin.com/in/ryansldev/" passHref={true}>
+              <a target="_blank">
+                <h1>Vamos trabalhar juntos</h1>
+              </a>
+            </Link>
+          </div>
         </div>
       </main>
 
