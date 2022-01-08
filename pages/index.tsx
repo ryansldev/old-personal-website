@@ -6,8 +6,23 @@ import styles from '../styles/Home.module.css';
 
 import Footer from './components/Footer';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+import { FiMoon, FiSun } from 'react-icons/fi';
+import { useState, useEffect } from 'react';
 
 const Home: NextPage = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const html = document.querySelector('html');
+    console.log(darkMode);
+    if(darkMode) {
+      html?.classList.add('dark-mode');
+      return;
+    }
+
+    html?.classList.remove('dark-mode');
+  }, [darkMode]);
+
   return (
     <div>
       <Head>
@@ -29,12 +44,16 @@ const Home: NextPage = () => {
             <h1>Ryan Lima</h1>
             <h2 style={{ marginBottom: '0.3em' }}>Sou UI/UX Designer e desenvolvedor FullStack</h2>
             <Link passHref={true} href="#projects">
-              <div className={styles.letsWorkTogether}>
+              <div className={styles.scrollTo}>
                 <div className={styles.scrollToIcon}>
                 </div>
                 Veja mais abaixo
               </div>
             </Link>
+            <button className={styles.viewMode} onClick={() => setDarkMode(!darkMode ? true : false)}>
+              { !darkMode ? <FiMoon size={24} /> : <FiSun size={24} /> }
+              { !darkMode ? 'Dark Mode' : 'Light mode' }
+            </button>
           </div>
 
           <h1 className={styles.projectsSectionTitle} id="projects">MY PROJECTS</h1>

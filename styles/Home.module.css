@@ -22,7 +22,7 @@
   font-weight: 400;
 }
 
-.hello .letsWorkTogether {
+.hello .scrollTo {
   color: var(--indigo-500);
   margin-top: 0.5em;
   
@@ -38,7 +38,7 @@
   border-radius: 50%;
 }
 
-.letsWorkTogether {
+.scrollTo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,7 +197,6 @@
   text-align: center;
 
   padding: 6em 0 8em 0;
-  color: var(--slate-900);
 }
 
 .contact h1 {
