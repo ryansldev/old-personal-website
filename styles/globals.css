@@ -25,12 +25,58 @@
   --slate-200: #e2ddff;
   --slate-100: #eee9ff;
   --slate-50: #f8f3ff;
+
+  --background: #f8f3ff;
+  --background-button: #f8f3ff;
+  --color-button: #0F0C27;
+}
+
+.dark-mode:root {
+  --indigo-900: #0000e9;
+  --indigo-800: #0000ed;
+  --indigo-700: #2900f1;
+  --indigo-600: #4800f9;
+
+  /* Primary Indigo */
+  --indigo-500: #5805FF;
+
+  --indigo-400: #7b41ff;
+  --indigo-300: #9767ff;
+  --indigo-200: #b795ff;
+  --indigo-100: #d5c0fe;
+  --indigo-50: #efe5ff;
+
+  /* Primary Slate */
+  --slate-900: #0F0C27;
+
+  --slate-800: #2f2d49;
+  --slate-700: #4d4a69;
+  --slate-600: #615d7c;
+  --slate-500: #8884a5;
+  --slate-400: #a9a5c8;
+  --slate-300: #cfcaee;
+  --slate-200: #e2ddff;
+  --slate-100: #eee9ff;
+  --slate-50: #eee9ff;
+
+  --background: #0F0C27;
+  --background-button: #0F0C27;
+  --color-button: #eee9ff;
 }
 
 html,
 body {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background: var(--background);
+}
+
+html.dark-mode {
+  color: var(--slate-100);
+}
+
+html {
   color: var(--slate-900);
 }
 
@@ -55,6 +101,10 @@ button, a {
 }
 
 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
   padding: 1em 0.75em;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -62,6 +112,9 @@ button {
   font-size: 1.175rem;
   transition: .3s;
   border: 0;
+
+  background: var(--background-button);
+  color: var(--color-button);
 }
 
 button:hover {
