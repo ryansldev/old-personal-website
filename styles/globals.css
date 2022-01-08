@@ -51,6 +51,7 @@ a {
 
 button, a {
   cursor: pointer;
+  transition: .3s ease-in-out;
 }
 
 button {
@@ -60,6 +61,7 @@ button {
   border-radius: .5vw;
   font-size: 1.175rem;
   transition: .3s;
+  border: 0;
 }
 
 button:hover {
