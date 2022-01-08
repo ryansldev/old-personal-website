@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="footer">
       <h1>Ryan Lima</h1>
       <div className={styles.networks}>
         <Link href="https://github.com/ryansldev" passHref={true}>
