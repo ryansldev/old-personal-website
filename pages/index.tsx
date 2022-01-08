@@ -25,12 +25,36 @@ const Home: NextPage = () => {
             </div>
             <h1>Ryan Lima</h1>
             <h2 style={{ marginBottom: '0.3em' }}>Sou UI Designer e desenvolvedor FullStack</h2>
-            <Link passHref={true} href="#">
+            <Link passHref={true} href="#projects">
               <div className={styles.letsWorkTogether}>
                 <div className={styles.scrollToIcon}>
                 </div>
                 Veja mais abaixo
               </div>
+            </Link>
+          </div>
+
+          <h1 className={styles.projectsSectionTitle}>MY PROJECTS</h1>
+          <div className={styles.projects} id="projects">
+            <Link href="https://github.com/ryansldev/world-wide-dev" passHref={true}>
+              <a target="_blank" className={styles.project} id={styles.wwdev}>
+                <div className={styles.containerProject}>
+                  <span className={styles.year}>2021</span>
+                  <h1 className={styles.title}>
+                    World Wide Dev – connect devs around the world
+                  </h1>
+                </div>
+              </a>
+            </Link>
+            <Link href="https://github.com/ryansldev/letmeask" passHref={true}>
+              <a target="_blank" className={styles.project} id={styles.letmeask}>
+                <div className={styles.containerProject}>
+                  <span className={styles.year}>2021</span>
+                  <h1 className={styles.title}>
+                    Letmeask – do questions
+                  </h1>
+                </div>
+              </a>
             </Link>
           </div>
         </div>

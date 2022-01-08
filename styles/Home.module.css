@@ -119,3 +119,74 @@
     font-size: 1.8rem;
   }
 }
+
+.projectsSectionTitle {
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 2em;
+  margin: 3em;
+}
+
+.project {
+  width: 100%;
+  max-width: 450px;
+  min-width: 280px;
+  height: 100%;
+  min-height: 600px;
+
+  font-size: 1rem;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 280px) {
+  .projects {
+    gap: 0;
+  }
+}
+
+.project#wwdev {
+  background-image: url('../public/wwdev-banner.jpg');
+}
+
+.project#letmeask {
+  background-image: url('../public/letmeask-banner.jpg');
+}
+
+.project h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--slate-800);
+
+  transition: .3s ease-in-out;
+}
+
+.project span {
+  font-size: 1rem;
+  color: var(--slate-600);
+  font-weight: 400;
+  font-variant: small-caps;
+  letter-spacing: .5em;
+}
+
+.project:hover h1 {
+  color: var(--indigo-500);
+}
+
+.project .containerProject {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
