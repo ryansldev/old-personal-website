@@ -26,7 +26,7 @@ const Home: NextPage = () => {
               </Link>
             </div>
             <h1>Ryan Lima</h1>
-            <h2 style={{ marginBottom: '0.3em' }}>Sou UI Designer e desenvolvedor FullStack</h2>
+            <h2 style={{ marginBottom: '0.3em' }}>Sou UI/UX Designer e desenvolvedor FullStack</h2>
             <Link passHref={true} href="#projects">
               <div className={styles.letsWorkTogether}>
                 <div className={styles.scrollToIcon}>
