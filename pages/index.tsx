@@ -5,6 +5,7 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 import { Footer } from './components/Footer';
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
 const Home: NextPage = () => {
   return (
@@ -66,7 +67,7 @@ const Home: NextPage = () => {
             </p>
             <Link href="https://www.linkedin.com/in/ryansldev/" passHref={true}>
               <a target="_blank">
-                <h1>Vamos trabalhar juntos</h1>
+                <h1>Vamos trabalhar juntos <HiOutlineArrowNarrowRight size={32} /></h1>
               </a>
             </Link>
           </div>

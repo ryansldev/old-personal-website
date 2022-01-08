@@ -203,6 +203,11 @@
 .contact h1 {
   font-size: 3rem;
   transition: .3s ease-in-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .contact h1:hover {
