@@ -56,14 +56,14 @@ const Home: NextPage = () => {
             </button>
           </div>
 
-          <h1 className={styles.projectsSectionTitle} id="projects">MY PROJECTS</h1>
+          <h1 className={styles.projectsSectionTitle} id="projects">MEUS PROJETOS</h1>
           <div className={styles.projects}>
             <Link href="https://github.com/ryansldev/world-wide-dev" passHref={true}>
               <a target="_blank" className={styles.project} id={styles.wwdev}>
                 <div className={styles.containerProject}>
                   <span className={styles.year}>2021</span>
                   <h1 className={styles.title}>
-                    World Wide Dev – connect devs around the world
+                    World Wide Dev – conecte devs ao redor do mundo
                   </h1>
                 </div>
               </a>
@@ -73,7 +73,7 @@ const Home: NextPage = () => {
                 <div className={styles.containerProject}>
                   <span className={styles.year}>2021</span>
                   <h1 className={styles.title}>
-                    Letmeask – do questions
+                    Letmeask – faça perguntas
                   </h1>
                 </div>
               </a>
