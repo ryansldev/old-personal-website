@@ -10,7 +10,7 @@ import { FiMoon, FiSun } from 'react-icons/fi';
 import { useState, useEffect } from 'react';
 
 const Home: NextPage = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const html = document.querySelector('html');
