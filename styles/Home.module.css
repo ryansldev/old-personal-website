@@ -210,7 +210,7 @@
 }
 
 .contact h1:hover {
-  color: var(--dark-blue-500);
+  color: var(--dark-blue-300);
 }
 
 @media (max-width: 720px) {
