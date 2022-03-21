@@ -1,6 +1,8 @@
-import styles from './styles.module.css';
-import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+
+import Link from "next/link";
+
+import styles from "./styles.module.css";
 
 function Footer() {
   return (
@@ -27,7 +29,7 @@ function Footer() {
         &#169; Todos os direitos reservados, Ryan Lima
       </span>
     </footer>
-  )
+  );
 }
 
 export default Footer;

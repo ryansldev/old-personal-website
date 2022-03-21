@@ -22,14 +22,14 @@
 
 .networks a {
   padding: 0.75em;
-  border-radius: .5vw;
+  border-radius: 0.5vw;
 
   display: flex;
   align-items: center;
 }
 
 .networks a:hover {
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .copyright {

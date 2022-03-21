@@ -1,25 +1,26 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+import { useState, useEffect } from "react";
+import { FiMoon, FiSun } from "react-icons/fi";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
-import Footer from './components/Footer';
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-import { FiMoon, FiSun } from 'react-icons/fi';
-import { useState, useEffect } from 'react';
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+
+import styles from "../styles/Home.module.css";
+import Footer from "./components/Footer";
 
 const Home: NextPage = () => {
   const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    const html = document.querySelector('html');
-    if(darkMode) {
-      html?.classList.add('dark-mode');
+    const html = document.querySelector("html");
+    if (darkMode) {
+      html?.classList.add("dark-mode");
       return;
     }
 
-    html?.classList.remove('dark-mode');
+    html?.classList.remove("dark-mode");
   }, [darkMode]);
 
   return (
@@ -36,28 +37,42 @@ const Home: NextPage = () => {
             <div className={styles.avatar}>
               <Link href="https://github.com/ryansldev" passHref={true}>
                 <a target="_blank">
-                  <Image src="/profile.jpg" alt="Ryan Lima" width={200} height={200} />
+                  <Image
+                    src="/profile.jpg"
+                    alt="Ryan Lima"
+                    width={200}
+                    height={200}
+                  />
                 </a>
               </Link>
             </div>
             <h1>Ryan Lima</h1>
-            <h2 style={{ marginBottom: '0.3em' }}>Sou UI/UX Designer e desenvolvedor FullStack</h2>
+            <h2 style={{ marginBottom: "0.3em" }}>
+              Sou UI/UX Designer e desenvolvedor FullStack
+            </h2>
             <Link passHref={true} href="#projects">
               <div className={styles.scrollTo}>
-                <div className={styles.scrollToIcon}>
-                </div>
+                <div className={styles.scrollToIcon}></div>
                 Veja mais abaixo
               </div>
             </Link>
-            <button className={styles.viewMode} onClick={() => setDarkMode(!darkMode ? true : false)}>
-              { !darkMode ? <FiMoon size={24} /> : <FiSun size={24} /> }
-              { !darkMode ? 'Dark Mode' : 'Light mode' }
+            <button
+              className={styles.viewMode}
+              onClick={() => setDarkMode(!darkMode ? true : false)}
+            >
+              {!darkMode ? <FiMoon size={24} /> : <FiSun size={24} />}
+              {!darkMode ? "Dark Mode" : "Light mode"}
             </button>
           </div>
 
-          <h1 className={styles.projectsSectionTitle} id="projects">MEUS PROJETOS</h1>
+          <h1 className={styles.projectsSectionTitle} id="projects">
+            MEUS PROJETOS
+          </h1>
           <div className={styles.projects}>
-            <Link href="https://github.com/ryansldev/world-wide-dev" passHref={true}>
+            <Link
+              href="https://github.com/ryansldev/world-wide-dev"
+              passHref={true}
+            >
               <a target="_blank" className={styles.project} id={styles.wwdev}>
                 <div className={styles.containerProject}>
                   <span className={styles.year}>2021</span>
@@ -68,24 +83,28 @@ const Home: NextPage = () => {
               </a>
             </Link>
             <Link href="https://github.com/ryansldev/letmeask" passHref={true}>
-              <a target="_blank" className={styles.project} id={styles.letmeask}>
+              <a
+                target="_blank"
+                className={styles.project}
+                id={styles.letmeask}
+              >
                 <div className={styles.containerProject}>
                   <span className={styles.year}>2021</span>
-                  <h1 className={styles.title}>
-                    Letmeask – faça perguntas
-                  </h1>
+                  <h1 className={styles.title}>Letmeask – faça perguntas</h1>
                 </div>
               </a>
             </Link>
           </div>
           <div className={styles.contact}>
             <p>
-              Estou aberto para novas experiências, precisa
-              de um desenvolvedor ou designer?
+              Estou aberto para novas experiências, precisa de um desenvolvedor
+              ou designer?
             </p>
             <Link href="https://www.linkedin.com/in/ryansldev/" passHref={true}>
               <a target="_blank">
-                <h1>Vamos trabalhar juntos <HiOutlineArrowNarrowRight size={32} /></h1>
+                <h1>
+                  Vamos trabalhar juntos <HiOutlineArrowNarrowRight size={32} />
+                </h1>
               </a>
             </Link>
           </div>
@@ -94,7 +113,7 @@ const Home: NextPage = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

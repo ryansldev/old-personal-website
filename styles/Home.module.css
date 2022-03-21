@@ -25,7 +25,7 @@
 .hello .scrollTo {
   color: var(--dark-blue-500);
   margin-top: 0.5em;
-  
+
   font-size: 1.175rem;
   font-weight: 600;
 }
@@ -55,14 +55,14 @@
   box-shadow: inset 0 0 0 2px var(--dark-blue-500);
   border-radius: 25px;
   cursor: pointer;
-  transition: all .25s;
+  transition: all 0.25s;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
 .scrollToIcon:after {
-  content: '';
+  content: "";
   width: 4px;
   height: 6px;
   background: var(--dark-blue-500);
@@ -77,34 +77,34 @@
   -webkit-animation-name: scroll;
   animation-name: scroll;
   position: absolute;
-  transition: background .25s;
+  transition: background 0.25s;
 }
 
 @-webkit-keyframes scroll {
-  0%{
-    opacity:1;
-    -webkit-transform:translateY(0);
-    transform:translateY(0)
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
-  
+
   50% {
-    opacity:1;
-    -webkit-transform:translateY(7px);
-    transform:translateY(7px)
+    opacity: 1;
+    -webkit-transform: translateY(7px);
+    transform: translateY(7px);
   }
 }
 
 @keyframes scroll {
   0% {
-    opacity:1;
+    opacity: 1;
     -webkit-transform: translateY(0);
-    transform:translateY(0);
+    transform: translateY(0);
   }
-  
+
   50% {
-    opacity:1;
-    -webkit-transform:translateY(7px);
-    transform:translateY(7px);
+    opacity: 1;
+    -webkit-transform: translateY(7px);
+    transform: translateY(7px);
   }
 }
 
@@ -157,11 +157,11 @@
 }
 
 .project#wwdev {
-  background-image: url('../public/wwdev-banner.jpg');
+  background-image: url("../public/wwdev-banner.jpg");
 }
 
 .project#letmeask {
-  background-image: url('../public/letmeask-banner.jpg');
+  background-image: url("../public/letmeask-banner.jpg");
 }
 
 .project h1 {
@@ -169,7 +169,7 @@
   font-weight: 600;
   color: var(--slate-800);
 
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .project span {
@@ -177,7 +177,7 @@
   color: var(--slate-600);
   font-weight: 400;
   font-variant: small-caps;
-  letter-spacing: .5em;
+  letter-spacing: 0.5em;
 }
 
 .project:hover {
@@ -201,7 +201,7 @@
 
 .contact h1 {
   font-size: 3rem;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 
   display: flex;
   align-items: center;
