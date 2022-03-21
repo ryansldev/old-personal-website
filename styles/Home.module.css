@@ -23,7 +23,7 @@
 }
 
 .hello .scrollTo {
-  color: var(--indigo-500);
+  color: var(--dark-blue-500);
   margin-top: 0.5em;
   
   font-size: 1.175rem;
@@ -52,7 +52,7 @@
 .scrollToIcon {
   min-width: 20px;
   height: 30px;
-  box-shadow: inset 0 0 0 2px var(--indigo-500);
+  box-shadow: inset 0 0 0 2px var(--dark-blue-500);
   border-radius: 25px;
   cursor: pointer;
   transition: all .25s;
@@ -65,7 +65,7 @@
   content: '';
   width: 4px;
   height: 6px;
-  background: var(--indigo-500);
+  background: var(--dark-blue-500);
   margin-left: 8px;
   top: 8px;
   left: 0;
@@ -180,8 +180,8 @@
   letter-spacing: .5em;
 }
 
-.project:hover h1 {
-  color: var(--indigo-500);
+.project:hover {
+  transform: translateY(-10px);
 }
 
 .project .containerProject {
@@ -210,7 +210,7 @@
 }
 
 .contact h1:hover {
-  color: var(--indigo-500);
+  color: var(--dark-blue-500);
 }
 
 @media (max-width: 720px) {
