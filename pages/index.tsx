@@ -14,7 +14,6 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     const html = document.querySelector('html');
-    console.log(darkMode);
     if(darkMode) {
       html?.classList.add('dark-mode');
       return;
