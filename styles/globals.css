@@ -1,61 +1,49 @@
 :root {
-  --dark-blue-900: #002a4e;
-  --dark-blue-800: #003a66;
-  --dark-blue-700: #054473;
-  --dark-blue-600: #134d7e;
-  --dark-blue-500: #1c5586;
-  --dark-blue-400: #476c95;
-  --dark-blue-300: #6986a6;
-  --dark-blue-200: #92a8bf;
-  --dark-blue-100: #bdcad9;
-  --dark-blue-50: #e5eaef;
+  /* Primary black */
+  --black-900: #0F0F0F;
 
-  /* Primary slate */
-  --slate-900: #020917;
+  --black-800: #2f2f2f;
+  --black-700: #4d4d4d;
+  --black-600: #606060;
+  --black-500: #878787;
+  --black-400: #a8a8a8;
+  --black-300: #cdcdcd;
+  --black-200: #e0e0e0;
+  --black-100: #ededed;
+  --black-50: #f7f7f7;
 
-  --slate-800: #313131;
-  --slate-700: #4f4f4f;
-  --slate-600: #626262;
-  --slate-500: #898989;
-  --slate-400: #aaaaaa;
-  --slate-300: #cfcfcf;
-  --slate-200: #e1e1e1;
-  --slate-100: #e5ebfa;
-  --slate-50: #f0f6ff;
+  --background: #f7f7f7;
+  --background-button: #f7f7f7;
+  --color-button: #4d4d4d;
 
-  --background: #f0f6ff;
-  --background-button: #f0f6ff;
-  --color-button: #313131;
+  --background-footer: #000;
+  --color-footer: #e0e0e0;
+
+  --title-color: #0F0F0F;
 }
 
 .dark-mode:root {
-  --dark-blue-900: #002a4e;
-  --dark-blue-800: #003a66;
-  --dark-blue-700: #054473;
-  --dark-blue-600: #134d7e;
-  --dark-blue-500: #1c5586;
-  --dark-blue-400: #476c95;
-  --dark-blue-300: #6986a6;
-  --dark-blue-200: #92a8bf;
-  --dark-blue-100: #bdcad9;
-  --dark-blue-50: #e5eaef;
+  /* Primary black */
+  --black-900: #0F0F0F;
 
-  /* Primary slate */
-  --slate-900: #020917;
+  --black-800: #2f2f2f;
+  --black-700: #4d4d4d;
+  --black-600: #606060;
+  --black-500: #878787;
+  --black-400: #a8a8a8;
+  --black-300: #cdcdcd;
+  --black-200: #e0e0e0;
+  --black-100: #ededed;
+  --black-50: #f7f7f7;
 
-  --slate-800: #313131;
-  --slate-700: #4f4f4f;
-  --slate-600: #626262;
-  --slate-500: #898989;
-  --slate-400: #aaaaaa;
-  --slate-300: #cfcfcf;
-  --slate-200: #e1e1e1;
-  --slate-100: #e5ebfa;
-  --slate-50: #f0f6ff;
+  --background: #000;
+  --background-button: #0F0F0F;
+  --color-button: #a8a8a8;
 
-  --background: #020917;
-  --background-button: #020917;
-  --color-button: #cfcfcf;
+  --background-footer: #0F0F0F;
+  --color-footer: #cdcdcd;
+
+  --title-color: #cdcdcd;
 }
 
 html,
@@ -67,11 +55,11 @@ body {
 }
 
 html.dark-mode {
-  color: var(--slate-300);
+  color: var(--black-300);
 }
 
 html {
-  color: var(--slate-800);
+  color: var(--black-800);
   scroll-behavior: smooth;
   /* backdrop-filter: blur(5px); */
 }

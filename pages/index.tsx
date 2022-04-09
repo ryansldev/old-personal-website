@@ -11,7 +11,7 @@ import styles from "../styles/Home.module.css";
 import Footer from "./components/Footer";
 
 const Home: NextPage = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const html = document.querySelector("html");
