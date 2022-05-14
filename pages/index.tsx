@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-import { FiMoon, FiSun } from "react-icons/fi";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 import type { NextPage } from "next";
@@ -8,21 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../styles/Home.module.css";
+import DarkModeButton from "./components/DarkModeButton";
 import Footer from "./components/Footer";
 
 const Home: NextPage = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const html = document.querySelector("html");
-    if (darkMode) {
-      html?.classList.add("dark-mode");
-      return;
-    }
-
-    html?.classList.remove("dark-mode");
-  }, [darkMode]);
-
   return (
     <div>
       <Head>
@@ -32,6 +19,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <DarkModeButton />
         <div className={styles.container}>
           <div className={styles.hello}>
             <div className={styles.avatar}>
@@ -56,13 +44,6 @@ const Home: NextPage = () => {
                 Veja mais abaixo
               </div>
             </Link>
-            <button
-              className={styles.viewMode}
-              onClick={() => setDarkMode(!darkMode ? true : false)}
-            >
-              {!darkMode ? <FiMoon size={24} /> : <FiSun size={24} />}
-              {!darkMode ? "Dark Mode" : "Light mode"}
-            </button>
           </div>
 
           <h1 className={styles.projectsSectionTitle} id="projects">
