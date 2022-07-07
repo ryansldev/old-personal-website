@@ -5,10 +5,17 @@ import Link from "next/link";
 
 import styles from "./styles.module.css";
 
-const Networks: FC = () => {
+const Networks: FC<{ direction?: "horizontal" | "vertical" }> = ({
+  direction = "horizontal",
+}) => {
   return (
     <div className={styles.networksContainer}>
-      <div className={styles.networks}>
+      <div
+        className={styles.networks}
+        style={{
+          flexDirection: `${direction === "horizontal" ? "row" : "column"}`,
+        }}
+      >
         <Link href="https://github.com/ryansldev" passHref={true}>
           <a target="_blank">
             <FaGithub size={18} />
