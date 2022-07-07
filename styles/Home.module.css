@@ -28,6 +28,18 @@
   letter-spacing: 3px;
 }
 
+@media (max-width: 456px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
 .hero h2 {
   font-size: 1rem;
   color: var(--black-300);
@@ -42,7 +54,7 @@
   padding-top: 2em;
 
   color: var(--black-500);
-  max-width: 50%;
+  max-width: 500px;
   margin: 0 auto;
 }
 

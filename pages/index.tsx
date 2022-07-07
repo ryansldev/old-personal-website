@@ -27,40 +27,42 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div id="about" className={styles.about}>
-          <p>
-            Olá, meu nome é <strong>Ryan Lima</strong> e sou um desenvolvedor{" "}
-            <strong>focado em eficiência.</strong> Deve estar se perguntando o
-            motivo de eu ter deixado isso claro, e irei explicar.
-          </p>
-          <p>
-            O mundo está mudando, inovações e novas soluções para problemas
-            surgem a cada dia de formas diferentes e de forma muito rápida, e
-            esse é o motivo.
-          </p>
-          <p>
-            Em um mundo onde tudo acontece muito rápido, empresas e startups
-            precisam de extrema eficiência, solucionar problemas rápido e
-            desenvolver soluções com eficácia e performance é essencial.
-          </p>
-          <p>
-            Por isso estou ligado às melhores tecnologias do mercado: Node.js,
-            Typescript, React, Next.js, React Native e a lista não termina tão
-            cedo.
-          </p>
-          <p>
-            Mas sabe o que todas essas stacks têm em comum? Todas elas se
-            conectam de forma simples. Stacks realmente eficientes e conectadas
-            que formam uma estrutura sólida para qualquer empresa.
-          </p>
-          <p>
-            A cada dia vemos mais gigantes como Facebook, Instagram, Discord e
-            muitas outras empresas ao redor do mundo utilizando essas stacks. E
-            sua empresa não deveria ficar de fora.
-          </p>
-          <p>
-            Agora que já contei um pouco sobre mim, pode ver meus projetos logo
-            abaixo.
-          </p>
+          <div className={styles.container}>
+            <p>
+              Olá, meu nome é <strong>Ryan Lima</strong> e sou um desenvolvedor{" "}
+              <strong>focado em eficiência.</strong> Deve estar se perguntando o
+              motivo de eu ter deixado isso claro, e irei explicar.
+            </p>
+            <p>
+              O mundo está mudando, inovações e novas soluções para problemas
+              surgem a cada dia de formas diferentes e de forma muito rápida, e
+              esse é o motivo.
+            </p>
+            <p>
+              Em um mundo onde tudo acontece muito rápido, empresas e startups
+              precisam de extrema eficiência, solucionar problemas rápido e
+              desenvolver soluções com eficácia e performance é essencial.
+            </p>
+            <p>
+              Por isso estou ligado às melhores tecnologias do mercado: Node.js,
+              Typescript, React, Next.js, React Native e a lista não termina tão
+              cedo.
+            </p>
+            <p>
+              Mas sabe o que todas essas stacks têm em comum? Todas elas se
+              conectam de forma simples. Stacks realmente eficientes e
+              conectadas que formam uma estrutura sólida para qualquer empresa.
+            </p>
+            <p>
+              A cada dia vemos mais gigantes como Facebook, Instagram, Discord e
+              muitas outras empresas ao redor do mundo utilizando essas stacks.
+              E sua empresa não deveria ficar de fora.
+            </p>
+            <p>
+              Agora que já contei um pouco sobre mim, pode ver meus projetos
+              logo abaixo.
+            </p>
+          </div>
         </div>
         <div className={styles.projects} id="projects">
           <div className={styles.container}>
@@ -152,12 +154,14 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className={styles.network}>
-          <h2>
-            Precisa de um desenvolvedor?
-            <Link href="https://www.linkedin.com/in/ryansldev/" passHref>
-              <a target="_blank">Entre em contato</a>
-            </Link>
-          </h2>
+          <div className={styles.container}>
+            <h2>
+              Precisa de um desenvolvedor?
+              <Link href="https://www.linkedin.com/in/ryansldev/" passHref>
+                <a target="_blank">Entre em contato</a>
+              </Link>
+            </h2>
+          </div>
         </div>
       </main>
     </div>
