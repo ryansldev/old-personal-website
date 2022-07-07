@@ -29,4 +29,4 @@ const Networks: FC = () => {
   );
 };
 
-export { Networks };
+export default Networks;

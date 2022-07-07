@@ -12,4 +12,4 @@ const ScrollTo: FC<{ href: string }> = ({ href }) => {
   );
 };
 
-export { ScrollTo };
+export default ScrollTo;

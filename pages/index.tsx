@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../styles/Home.module.css";
-import { Clock } from "./components/Clock";
-import { Project } from "./components/Project";
-import { ScrollTo } from "./components/ScrollTo";
+import Clock from "./components/Clock";
+import Project from "./components/Project";
+import ScrollTo from "./components/ScrollTo";
 
 const Home: NextPage = () => {
   return (

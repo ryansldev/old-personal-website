@@ -38,4 +38,4 @@ const Project: FC<ProjectProps> = ({
   );
 };
 
-export { Project };
+export default Project;

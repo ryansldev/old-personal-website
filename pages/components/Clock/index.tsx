@@ -35,4 +35,4 @@ const Clock: FC = () => {
   );
 };
 
-export { Clock };
+export default Clock;
