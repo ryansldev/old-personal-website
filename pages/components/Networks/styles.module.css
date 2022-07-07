@@ -1,0 +1,26 @@
+.networksContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.networks {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  max-width: 150px;
+}
+
+.networks a {
+  padding: 0.75em;
+  border-radius: 0.5vw;
+
+  display: flex;
+  align-items: center;
+}
+
+.networks a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}

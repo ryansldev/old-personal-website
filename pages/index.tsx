@@ -1,13 +1,12 @@
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../styles/Home.module.css";
-import DarkModeButton from "./components/DarkModeButton";
-import Footer from "./components/Footer";
+import { Clock } from "./components/Clock";
+import { Project } from "./components/Project";
+import { ScrollTo } from "./components/ScrollTo";
 
 const Home: NextPage = () => {
   return (
@@ -19,80 +18,148 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <DarkModeButton />
-        <div className={styles.container}>
-          <div className={styles.hello}>
-            <div className={styles.avatar}>
-              <Link href="https://github.com/ryansldev" passHref={true}>
-                <a target="_blank">
-                  <Image
-                    src="/profile.jpg"
-                    alt="Ryan Lima"
-                    width={200}
-                    height={200}
-                  />
-                </a>
-              </Link>
-            </div>
-            <h1>Ryan Lima</h1>
-            <h2 style={{ marginBottom: "0.3em" }}>
-              Sou UI/UX Designer e desenvolvedor FullStack
-            </h2>
-            <Link passHref={true} href="#projects">
-              <div className={styles.scrollTo}>
-                <div className={styles.scrollToIcon}></div>
-                Veja mais abaixo
-              </div>
-            </Link>
-          </div>
-
-          <h1 className={styles.projectsSectionTitle} id="projects">
-            MEUS PROJETOS
-          </h1>
-          <div className={styles.projects}>
-            <Link
-              href="https://github.com/ryansldev/world-wide-dev"
-              passHref={true}
-            >
-              <a target="_blank" className={styles.project} id={styles.wwdev}>
-                <div className={styles.containerProject}>
-                  <span className={styles.year}>2021</span>
-                  <h1 className={styles.title}>
-                    World Wide Dev – conecte devs ao redor do mundo
-                  </h1>
-                </div>
-              </a>
-            </Link>
-            <Link href="https://github.com/ryansldev/letmeask" passHref={true}>
-              <a
-                target="_blank"
-                className={styles.project}
-                id={styles.letmeask}
-              >
-                <div className={styles.containerProject}>
-                  <span className={styles.year}>2021</span>
-                  <h1 className={styles.title}>Letmeask – faça perguntas</h1>
-                </div>
-              </a>
-            </Link>
-          </div>
-          <div className={styles.contact}>
-            <p>
-              Estou aberto para novas experiências, precisa de um desenvolvedor
-              ou designer?
-            </p>
-            <Link href="https://www.linkedin.com/in/ryansldev/" passHref={true}>
-              <a target="_blank">
-                <h1>
-                  Vamos trabalhar juntos <HiOutlineArrowNarrowRight size={32} />
-                </h1>
-              </a>
-            </Link>
+        <Clock />
+        <div className={styles.hero}>
+          <div className={styles.container}>
+            <h1>RYAN S. LIMA</h1>
+            <h2>Desenvolvedor Fullstack focado em eficiência.</h2>
+            <ScrollTo href="#about" />
           </div>
         </div>
-      </main>
+        <div id="about" className={styles.about}>
+          <p>
+            Olá, meu nome é <strong>Ryan Lima</strong> e sou um desenvolvedor{" "}
+            <strong>focado em eficiência.</strong> Deve estar se perguntando o
+            motivo de eu ter deixado isso claro, e irei explicar.
+          </p>
+          <p>
+            O mundo está mudando, inovações e novas soluções para problemas
+            surgem a cada dia de formas diferentes e de forma muito rápida, e
+            esse é o motivo.
+          </p>
+          <p>
+            Em um mundo onde tudo acontece muito rápido, empresas e startups
+            precisam de extrema eficiência, solucionar problemas rápido e
+            desenvolver soluções com eficácia e performance é essencial.
+          </p>
+          <p>
+            Por isso estou ligado às melhores tecnologias do mercado: Node.js,
+            Typescript, React, Next.js, React Native e a lista não termina tão
+            cedo.
+          </p>
+          <p>
+            Mas sabe o que todas essas stacks têm em comum? Todas elas se
+            conectam de forma simples. Stacks realmente eficientes e conectadas
+            que formam uma estrutura sólida para qualquer empresa.
+          </p>
+          <p>
+            A cada dia vemos mais gigantes como Facebook, Instagram, Discord e
+            muitas outras empresas ao redor do mundo utilizando essas stacks. E
+            sua empresa não deveria ficar de fora.
+          </p>
+          <p>
+            Agora que já contei um pouco sobre mim, pode ver meus projetos logo
+            abaixo.
+          </p>
+        </div>
+        <div className={styles.projects} id="projects">
+          <div className={styles.container}>
+            <h1>PROJETOS</h1>
+            <p>Projetos que desenvolvi ao longo da minha carreira</p>
 
-      <Footer />
+            <Project
+              projectLink="https://github.com/ryansldev/world-wide-dev"
+              image="https://unsplash.com/photos/Q1p7bh3SHj8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MzB8fGNvbm5lY3Rpb258ZW58MHx8fHwxNjU3MTkzODE5&force=true&w=1920"
+            >
+              <p>
+                <strong>WWD</strong> foi um projeto desenvolvido por mim a
+                alguns anos que será reformulado em outro projeto chamado
+                <strong> dev.radar.</strong>
+              </p>
+              <p>
+                O intuito desse projeto é conectar desenvolvedores ao redor do
+                mundo de uma forma simples e prática.
+              </p>
+
+              <p>
+                Para conferir o projeto,{" "}
+                <Link
+                  href="https://github.com/ryansldev/world-wide-dev"
+                  passHref
+                >
+                  <a target="_blank">clique aqui</a>
+                </Link>
+              </p>
+            </Project>
+
+            <Project
+              image="https://unsplash.com/photos/_nm_mZ4Cs2I/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU3MjAwNjQ0&force=true&w=1920"
+              projectLink="https://github.com/ryansldev/letmeask"
+              imageAt="right"
+            >
+              <p>
+                O <strong>Letmeask</strong> foi um projeto desenvolvido em um
+                evento chamado <strong>NLW</strong>, nesse evento que acontece
+                todos os anos sempre criamos uma aplicação do{" "}
+                <strong>total zero</strong> em uma semana com as melhores stacks
+                de todo mercado.
+              </p>
+              <p>
+                Em uma das milhares de vezes que participei, criamos uma
+                plataforma para o desenvolvimento de perguntas e respostas
+                online em uma live stream para facilitar o criador de conteúdo a
+                organizar e categorizar as perguntas.
+              </p>
+
+              <p>
+                Para conferir o projeto,{" "}
+                <Link href="https://github.com/ryansldev/letmeask" passHref>
+                  <a target="_blank">clique aqui</a>
+                </Link>
+              </p>
+            </Project>
+
+            <Project image="https://unsplash.com/photos/o-ubWHV29Uk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8bm90ZXxlbnwwfHx8fDE2NTcyMTE1MzA&force=true&w=1920">
+              <p>
+                <strong>Feedget Widget</strong> foi outra aplicação desenvolvida
+                na <strong>NLW</strong> e essa aplicação consistiu em um widget
+                que pode ser utilizado em qualquer sistema para receber
+                feedbacks.
+              </p>
+
+              <p>
+                A aplicação também foi colocada no ar por mim, então você pode
+                verificar online {""}
+                <Link href="https://feedget-web-mauve.vercel.app/" passHref>
+                  <a target="_blank">clicando aqui</a>
+                </Link>
+              </p>
+
+              <p>
+                Projeto no GitHub: {""}
+                <Link href="https://github.com/ryansldev/feedget-web" passHref>
+                  <a target="_blank">Web</a>
+                </Link>
+                {""} e {""}
+                <Link
+                  href="https://github.com/ryansldev/feedget-server"
+                  passHref
+                >
+                  <a target="_blank">API</a>
+                </Link>
+              </p>
+            </Project>
+          </div>
+        </div>
+        <div className={styles.network}>
+          <h2>
+            Precisa de um desenvolvedor?
+            <Link href="https://www.linkedin.com/in/ryansldev/" passHref>
+              <a target="_blank">Entre em contato</a>
+            </Link>
+          </h2>
+        </div>
+      </main>
     </div>
   );
 };

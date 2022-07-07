@@ -1,0 +1,55 @@
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+
+  /* margin: 0em 0 50em 0; */
+  padding-top: 5em;
+  position: sticky;
+  top: 0px;
+
+  gap: 4em;
+  background: var(--background);
+}
+
+.project .content,
+.project .background {
+  flex: 1;
+}
+
+.project .background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  filter: grayscale(100);
+  opacity: 0.5;
+
+  text-align: center;
+  min-height: 100vh;
+}
+
+.project .content .text {
+  font-size: 0.875rem;
+  position: sticky;
+  top: 50px;
+
+  text-align: left;
+  color: var(--black-400);
+}
+
+.project .content p {
+  margin-top: 1em;
+}
+
+.project:last-child {
+  margin: 0em;
+}
+
+@media (max-width: 768px) {
+  .project {
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse !important;
+  }
+}
