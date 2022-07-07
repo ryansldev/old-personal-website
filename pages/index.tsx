@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import styles from "../styles/Home.module.css";
 import Clock from "./components/Clock";
+import Networks from "./components/Networks";
 import Project from "./components/Project";
 import ScrollTo from "./components/ScrollTo";
 
@@ -23,6 +24,8 @@ const Home: NextPage = () => {
           <div className={styles.container}>
             <h1>RYAN S. LIMA</h1>
             <h2>Desenvolvedor Fullstack focado em eficiência.</h2>
+            <Networks />
+
             <ScrollTo href="#about" />
           </div>
         </div>
