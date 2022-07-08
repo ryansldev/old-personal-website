@@ -4,11 +4,15 @@
   min-height: 100vh;
 
   /* margin: 0em 0 50em 0; */
-  padding-top: 5em;
+  padding-top: 2em;
   position: sticky;
   top: 0px;
 
   gap: 4em;
+}
+
+.project:first-child {
+  padding-top: 3em;
 }
 
 .project .content,
@@ -16,7 +20,7 @@
   flex: 1;
 }
 
-.project .background {
+.projectContainer .background {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,7 +29,8 @@
   opacity: 0.5;
 
   text-align: center;
-  min-height: 100vh;
+  position: sticky;
+  min-height: 180vh;
 }
 
 .project .content .text {
