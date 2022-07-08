@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="manifest" href="/manifest.json" />
+          <meta name="theme-color" content="#0F0F0F" />
         </Head>
         <body>
           <Main />
