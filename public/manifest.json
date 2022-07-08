@@ -1,8 +1,8 @@
 {
   "name": "Ryan Lima - Desenvolvedor FullStack focado em eficiência",
   "short_name": "Ryan Lima - Desenvolvedor FullStack",
-  "theme_color": "#0f0f0f",
-  "background_color": "0F0F0F",
+  "theme_color": "#0F0F0F",
+  "background_color": "#0F0F0F",
   "display": "browser",
   "scope": "/",
   "start_url": "/"
