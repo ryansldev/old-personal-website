@@ -18,21 +18,23 @@ const Project: FC<ProjectProps> = ({
   children,
 }) => {
   return (
-    <div
-      className={styles.project}
-      style={{
-        flexDirection: `${imageAt === "right" ? "row-reverse" : "row"}`,
-      }}
-    >
-      <Link href={projectLink} passHref>
-        <a
-          className={styles.background}
-          style={{ backgroundImage: `url(${image})` }}
-          target="_blank"
-        ></a>
-      </Link>
-      <div className={styles.content}>
-        <div className={styles.text}>{children}</div>
+    <div className={styles.projectContainer}>
+      <div
+        className={styles.project}
+        style={{
+          flexDirection: `${imageAt === "right" ? "row-reverse" : "row"}`,
+        }}
+      >
+        <Link href={projectLink} passHref>
+          <a
+            className={styles.background}
+            style={{ backgroundImage: `url(${image})` }}
+            target="_blank"
+          ></a>
+        </Link>
+        <div className={styles.content}>
+          <div className={styles.text}>{children}</div>
+        </div>
       </div>
     </div>
   );
