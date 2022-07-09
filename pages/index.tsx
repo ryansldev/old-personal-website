@@ -154,6 +154,42 @@ const Home: NextPage = () => {
                 </Link>
               </p>
             </Project>
+
+            <Project
+              image="https://unsplash.com/photos/DOu3JJ3eLQc/download?force=true&w=1920"
+              projectLink="https://github.com/ryansldev/event-platform"
+              imageAt="right"
+            >
+              <p>
+                <strong>Event platform</strong> foi uma aplicação desenvolvida
+                no <strong>Ignite Lab</strong> que é da mesma empresa
+                responsável pela NLW, a {""}
+                <Link href="https://www.rocketseat.com.br/" passHref>
+                  <a target="_blank">Rocketseat</a>
+                </Link>
+              </p>
+
+              <p>
+                Desta vez tivemos uma plataforma de eventos, para o usuário é
+                simples, ele entra colocando seu e-mail e está tudo pronto,
+                todas as aulas estarão disponíveis.
+              </p>
+
+              <p>
+                Para o instrutor, basta cadastrar a aula com um vídeo hospedado
+                no YouTube, data de liberação, título, descrição e etc. Na data
+                cadastrada o conteúdo ficará disponível na plataforma.
+              </p>
+
+              <p>
+                Caso queira conferir o projeto,{" "}
+                <Link href="https://github.com/ryansldev/event-platform">
+                  <a target="_blank">clique aqui</a>
+                </Link>{" "}
+                {""}
+                ou na imagem.
+              </p>
+            </Project>
           </div>
         </div>
         <div className={styles.network}>
