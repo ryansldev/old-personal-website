@@ -61,10 +61,6 @@ const Home: NextPage = () => {
               muitas outras empresas ao redor do mundo utilizando essas stacks.
               E sua empresa não deveria ficar de fora.
             </p>
-            <p>
-              Agora que já contei um pouco sobre mim, pode ver meus projetos
-              logo abaixo.
-            </p>
           </div>
         </div>
         <div className={styles.projects} id="projects">
