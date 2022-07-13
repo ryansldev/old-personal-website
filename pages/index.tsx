@@ -68,56 +68,6 @@ const Home: NextPage = () => {
           <p>Projetos que desenvolvi ao longo da minha carreira</p>
 
           <Project
-            projectLink="https://github.com/ryansldev/world-wide-dev"
-            image="https://unsplash.com/photos/Q1p7bh3SHj8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MzB8fGNvbm5lY3Rpb258ZW58MHx8fHwxNjU3MTkzODE5&force=true&w=1920"
-          >
-            <p>
-              <strong>WWD</strong> foi um projeto desenvolvido por mim a alguns
-              anos que será reformulado em outro projeto chamado
-              <strong> dev.radar.</strong>
-            </p>
-            <p>
-              O intuito desse projeto é conectar desenvolvedores ao redor do
-              mundo de uma forma simples e prática.
-            </p>
-
-            <p>
-              Para conferir o projeto,{" "}
-              <Link href="https://github.com/ryansldev/world-wide-dev" passHref>
-                <a target="_blank">clique aqui</a>
-              </Link>
-            </p>
-          </Project>
-
-          <Project
-            image="https://unsplash.com/photos/_nm_mZ4Cs2I/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU3MjAwNjQ0&force=true&w=1920"
-            projectLink="https://github.com/ryansldev/letmeask"
-            imageAt="right"
-          >
-            <p>
-              O <strong>Letmeask</strong> foi um projeto desenvolvido em um
-              evento chamado <strong>NLW</strong>, nesse evento que acontece
-              todos os anos sempre criamos uma aplicação do{" "}
-              <strong>total zero</strong> em uma semana com as melhores stacks
-              de todo mercado.
-            </p>
-            <p>
-              Em uma das milhares de vezes que participei, criamos uma
-              plataforma para o desenvolvimento de perguntas e respostas online
-              em uma live stream para facilitar o criador de conteúdo a
-              organizar e categorizar as perguntas.
-            </p>
-
-            <p>
-              Para conferir o projeto,{" "}
-              <Link href="https://github.com/ryansldev/letmeask" passHref>
-                <a target="_blank">clique aqui</a>
-              </Link>
-            </p>
-          </Project>
-
-          <Project
-            // image="https://unsplash.com/photos/o-ubWHV29Uk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8bm90ZXxlbnwwfHx8fDE2NTcyMTE1MzA&force=true&w=1920"
             mockups={[
               {
                 url: "/assets/feedget-iphone-mockup.webp",
@@ -128,9 +78,12 @@ const Home: NextPage = () => {
             ]}
           >
             <p>
-              <strong>Feedget Widget</strong> foi outra aplicação desenvolvida
-              na <strong>NLW</strong> e essa aplicação consistiu em um widget
-              que pode ser utilizado em qualquer sistema para receber feedbacks.
+              <strong>Feedget Widget</strong> foi um projeto desenvolvido em um
+              evento chamado <strong>NLW</strong>, nesse evento que acontece
+              todos os anos sempre criamos uma aplicação do{" "}
+              <strong>total zero</strong> em uma semana com as melhores stacks
+              de todo mercado. Essa aplicação constitui em um widget que pode
+              ser utilizado em qualquer sistema para receber feedbacks.
             </p>
 
             <p>
@@ -154,9 +107,15 @@ const Home: NextPage = () => {
           </Project>
 
           <Project
-            image="https://unsplash.com/photos/DOu3JJ3eLQc/download?force=true&w=1920"
             projectLink="https://github.com/ryansldev/event-platform"
-            imageAt="right"
+            mockups={[
+              {
+                url: "/assets/event-platform-iphone-mockup.webp",
+              },
+              {
+                url: "/assets/event-platform-ipad-mockup.webp",
+              },
+            ]}
           >
             <p>
               <strong>Event platform</strong> foi uma aplicação desenvolvida no{" "}
@@ -186,6 +145,49 @@ const Home: NextPage = () => {
               </Link>{" "}
               {""}
               ou na imagem.
+            </p>
+          </Project>
+
+          <Project
+            image="https://unsplash.com/photos/_nm_mZ4Cs2I/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU3MjAwNjQ0&force=true&w=1920"
+            projectLink="https://github.com/ryansldev/letmeask"
+            imageAt="right"
+          >
+            <p>
+              Em uma das milhares de vezes que participei de uma{" "}
+              <strong>NLW</strong>, criamos uma plataforma para o
+              desenvolvimento de perguntas e respostas online em uma live stream
+              para facilitar o criador de conteúdo a organizar e categorizar as
+              perguntas.
+            </p>
+
+            <p>
+              Para conferir o projeto,{" "}
+              <Link href="https://github.com/ryansldev/letmeask" passHref>
+                <a target="_blank">clique aqui</a>
+              </Link>
+            </p>
+          </Project>
+
+          <Project
+            projectLink="https://github.com/ryansldev/world-wide-dev"
+            image="https://unsplash.com/photos/Q1p7bh3SHj8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MzB8fGNvbm5lY3Rpb258ZW58MHx8fHwxNjU3MTkzODE5&force=true&w=1920"
+          >
+            <p>
+              <strong>WWD</strong> foi um projeto desenvolvido por mim a alguns
+              anos que será reformulado em outro projeto chamado
+              <strong> dev.radar.</strong>
+            </p>
+            <p>
+              O intuito desse projeto é conectar desenvolvedores ao redor do
+              mundo de uma forma simples e prática.
+            </p>
+
+            <p>
+              Para conferir o projeto,{" "}
+              <Link href="https://github.com/ryansldev/world-wide-dev" passHref>
+                <a target="_blank">clique aqui</a>
+              </Link>
             </p>
           </Project>
         </div>
