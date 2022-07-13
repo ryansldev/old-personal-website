@@ -78,3 +78,9 @@ h2, h3, h4, h5, h6, span, p {
 strong {
   font-weight: 600;
 }
+
+.container {
+  width: 100%;
+  max-width: 77vw;
+  margin: 0 auto;
+}
