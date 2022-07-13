@@ -45,7 +45,6 @@ const Project: FC<ProjectProps> = ({
           <div
             className={styles.content}
             style={{
-              marginTop: `${image ? "0px" : "5em"}`,
               maxWidth: `${image ? "77vw" : "50vw"}`,
             }}
           >
