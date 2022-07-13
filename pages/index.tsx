@@ -67,7 +67,7 @@ const Home: NextPage = () => {
           <h1>PROJETOS</h1>
           <p>Projetos que desenvolvi ao longo da minha carreira</p>
 
-          {/* <Project
+          <Project
             projectLink="https://github.com/ryansldev/world-wide-dev"
             image="https://unsplash.com/photos/Q1p7bh3SHj8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MzB8fGNvbm5lY3Rpb258ZW58MHx8fHwxNjU3MTkzODE5&force=true&w=1920"
           >
@@ -114,7 +114,7 @@ const Home: NextPage = () => {
                 <a target="_blank">clique aqui</a>
               </Link>
             </p>
-          </Project> */}
+          </Project>
 
           <Project
             // image="https://unsplash.com/photos/o-ubWHV29Uk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8bm90ZXxlbnwwfHx8fDE2NTcyMTE1MzA&force=true&w=1920"
@@ -153,7 +153,7 @@ const Home: NextPage = () => {
             </p>
           </Project>
 
-          {/* <Project
+          <Project
             image="https://unsplash.com/photos/DOu3JJ3eLQc/download?force=true&w=1920"
             projectLink="https://github.com/ryansldev/event-platform"
             imageAt="right"
@@ -187,7 +187,7 @@ const Home: NextPage = () => {
               {""}
               ou na imagem.
             </p>
-          </Project> */}
+          </Project>
         </div>
         <div className={styles.network}>
           <div className={styles.container}>
