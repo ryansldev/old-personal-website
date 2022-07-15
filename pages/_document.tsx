@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
           />
           <link rel="manifest" href="/manifest.json" />
           {/* eslint-disable @next/next/no-sync-scripts */}
-          <script src="/js/lazyLoad.js" />
+          {/* <script src="/js/lazyLoad.js" /> */}
           <meta name="theme-color" content="#0F0F0F" />
         </Head>
         <body>
