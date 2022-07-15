@@ -1,5 +1,6 @@
 import type { FC, ReactNode } from "react";
 
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 import styles from "./styles.module.css";
@@ -55,7 +56,12 @@ const Project: FC<ProjectProps> = ({
       {mockups && mockups?.length > 0 && (
         <div className={styles.mockups}>
           {mockups.map((mockup, key) => (
-            <div key={key}>
+            <motion.div
+              key={key}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: false }}
+            >
               <Link href={projectLink} passHref>
                 <a
                   target="_blank"
@@ -65,7 +71,7 @@ const Project: FC<ProjectProps> = ({
                   }}
                 ></a>
               </Link>
-            </div>
+            </motion.div>
           ))}
         </div>
       )}

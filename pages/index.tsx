@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../styles/Home.module.css";
@@ -29,7 +29,13 @@ const Home: NextPage = () => {
             <ScrollTo href="#about" />
           </div>
         </div>
-        <div id="about" className={styles.about}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false }}
+          id="about"
+          className={styles.about}
+        >
           <div className={styles.container}>
             <p>
               Olá, meu nome é <strong>Ryan Lima</strong> e sou um desenvolvedor{" "}
@@ -62,8 +68,14 @@ const Home: NextPage = () => {
               E sua empresa não deveria ficar de fora.
             </p>
           </div>
-        </div>
-        <div className={styles.projects} id="projects">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false }}
+          className={styles.projects}
+          id="projects"
+        >
           <h1>PROJETOS</h1>
           <p>Projetos que desenvolvi ao longo da minha carreira</p>
 
@@ -190,8 +202,13 @@ const Home: NextPage = () => {
               </Link>
             </p>
           </Project>
-        </div>
-        <div className={styles.network}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false }}
+          className={styles.network}
+        >
           <div className={styles.container}>
             <h2>
               Precisa de um desenvolvedor?
@@ -200,7 +217,7 @@ const Home: NextPage = () => {
               </Link>
             </h2>
           </div>
-        </div>
+        </motion.div>
       </main>
     </div>
   );
