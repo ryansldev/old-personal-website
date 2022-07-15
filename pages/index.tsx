@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -29,13 +28,7 @@ const Home: NextPage = () => {
             <ScrollTo href="#about" />
           </div>
         </div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: false }}
-          id="about"
-          className={styles.about}
-        >
+        <div id="about" className={styles.about}>
           <div className={styles.container}>
             <p>
               Olá, meu nome é <strong>Ryan Lima</strong> e sou um desenvolvedor{" "}
@@ -68,14 +61,8 @@ const Home: NextPage = () => {
               E sua empresa não deveria ficar de fora.
             </p>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: false }}
-          className={styles.projects}
-          id="projects"
-        >
+        </div>
+        <div className={styles.projects} id="projects">
           <h1>PROJETOS</h1>
           <p>Projetos que desenvolvi ao longo da minha carreira</p>
 
@@ -202,13 +189,8 @@ const Home: NextPage = () => {
               </Link>
             </p>
           </Project>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: false }}
-          className={styles.network}
-        >
+        </div>
+        <div className={styles.network}>
           <div className={styles.container}>
             <h2>
               Precisa de um desenvolvedor?
@@ -217,7 +199,7 @@ const Home: NextPage = () => {
               </Link>
             </h2>
           </div>
-        </motion.div>
+        </div>
       </main>
     </div>
   );
