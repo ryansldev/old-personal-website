@@ -55,17 +55,13 @@ const Project: FC<ProjectProps> = ({
       {mockups && mockups?.length > 0 && (
         <div className={styles.mockups}>
           {mockups.map((mockup, key) => (
-            <div key={key}>
-              <Link href={projectLink} passHref>
-                <a
-                  target="_blank"
-                  className={styles.mockup}
-                  style={{
-                    backgroundImage: `linear-gradient(180deg, #0F0F0F 9.58%, rgba(15, 15, 15, 0) 52.24%, rgba(15, 15, 15, 0) 63.58%, #0F0F0F 96.71%), url(${mockup.url})`,
-                  }}
-                ></a>
-              </Link>
-            </div>
+            <div
+              key={key}
+              className={styles.mockup}
+              style={{
+                backgroundImage: `linear-gradient(180deg, #0F0F0F 9.58%, rgba(15, 15, 15, 0) 52.24%, rgba(15, 15, 15, 0) 63.58%, #0F0F0F 96.71%), url(${mockup.url})`,
+              }}
+            ></div>
           ))}
         </div>
       )}
