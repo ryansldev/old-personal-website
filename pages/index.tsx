@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <Clock />
         <div className={styles.hero}>
           <div className={styles.container}>
@@ -60,9 +60,6 @@ const Home: NextPage = () => {
               muitas outras empresas ao redor do mundo utilizando essas stacks.
               E sua empresa não deveria ficar de fora.
             </p>
-            <p>
-              <strong>Vamos inovar o mundo juntos.</strong>
-            </p>
           </div>
         </div>
         <div className={styles.projects} id="projects">
@@ -84,13 +81,13 @@ const Home: NextPage = () => {
               evento chamado <strong>NLW</strong>, nesse evento que acontece
               todos os anos sempre criamos uma aplicação do{" "}
               <strong>total zero</strong> em uma semana com as melhores stacks
-              de todo mercado.
+              de todo mercado. Essa aplicação constitui em um widget que pode
+              ser utilizado em qualquer sistema para receber feedbacks.
             </p>
 
             <p>
-              Essa aplicação constitui em um widget que pode ser utilizado em
-              qualquer sistema para receber feedbacks. A aplicação também foi
-              colocada no ar por mim, então você pode verificar online {""}
+              A aplicação também foi colocada no ar por mim, então você pode
+              verificar online {""}
               <Link href="https://feedget-web-mauve.vercel.app/" passHref>
                 <a target="_blank">clicando aqui</a>
               </Link>
